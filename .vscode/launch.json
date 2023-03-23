@@ -1,0 +1,39 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/../build/edge",
+             //"args": ["-d","n2n3.0.1","-c","mynetwork","-k","encryptme","-a","172.16.30.6","-l","121.41.98.196:3030","-r"],
+            "args": ["-f","-d","sm4.1","-c","mynetwork","-k","encryptme","-A6","-a","172.16.31.25","-l","121.41.98.196:3030","-r"],
+            //"args": ["-h"],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description":  "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+                // {
+                //     "text": "-gdb-set follow-fork-mode child",
+                //     "ignoreFailures": true
+                // }
+            ]
+        }
+
+    ]
+}

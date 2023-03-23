@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "stdint.h": "c",
+        "portable_endian.h": "c",
+        "n2n.h": "c",
+        "network_traffic_filter.h": "c",
+        "edge_utils_win32.h": "c",
+        "sm4.h": "c",
+        "sn_selection.h": "c",
+        "minilzo.h": "c",
+        "assert.h": "c"
+    }
+}
